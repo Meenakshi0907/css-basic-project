@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: gray;
+    color: white;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 100px; 
+    margin-right: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: green;
+}
+
+.promo {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    color: green; /* Change text color to make it visible on the background image */
+    overflow: hidden; /* Ensure the pseudo-element doesn't overflow the section */
+}
+
+.promo .content {
+    position: relative;
+    z-index: 1; /* Ensure the text content is above the pseudo-element */
+}
+
+.promo h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.promo p {
+    margin: 10px 0 0 0;
+    color: green; /* Ensure text is visible on the background image */
+}
+
+main.info {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin: 15px 0;
+}
+
+.card p {
+    color: #555;
+    margin: 10px 0;
+}
+
+.card a {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
